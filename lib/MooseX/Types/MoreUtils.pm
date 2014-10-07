@@ -5,7 +5,7 @@ use warnings;
 package MooseX::Types::MoreUtils;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 
 use Carp             0           qw( carp croak );
 use List::Util       1.29        qw( pairkeys pairvalues pairmap pairgrep );
@@ -41,9 +41,8 @@ sub _reify
 				if ($function)
 				{
 					require Moose::Util::TypeConstraints;
-					package Moose::Util::TypeConstraints;
 					no strict qw(refs);
-					return &$function($value);
+					return &{"Moose::Util::TypeConstraints::$function"}($value);
 				}
 			}
 		}

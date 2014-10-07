@@ -23,11 +23,9 @@ no_index:
     - xt
 optional_features: {}
 provides:
-  Moose::Util::TypeConstraints:
-    file: lib/MooseX/Types/MoreUtils.pm
   MooseX::Types::MoreUtils:
     file: lib/MooseX/Types/MoreUtils.pm
-    version: '0.001'
+    version: '0.002'
 recommends:
   B::Hooks::Parser: '0'
   Moose: '2.0600'
@@ -41,4 +39,4 @@ resources:
   homepage: https://metacpan.org/release/MooseX-Types-MoreUtils
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tobyink/p5-moosex-types-moreutils.git
-version: '0.001'
+version: '0.002'

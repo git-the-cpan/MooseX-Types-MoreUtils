@@ -30,8 +30,7 @@ my $meta = {
                         },
                       },
   "provides"       => {
-                        "Moose::Util::TypeConstraints" => { file => "lib/MooseX/Types/MoreUtils.pm" },
-                        "MooseX::Types::MoreUtils"     => { file => "lib/MooseX/Types/MoreUtils.pm", version => 0.001 },
+                        "MooseX::Types::MoreUtils" => { file => "lib/MooseX/Types/MoreUtils.pm", version => 0.002 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -48,7 +47,7 @@ my $meta = {
                         x_identifier => "http://purl.org/NET/cpan-uri/dist/MooseX-Types-MoreUtils/project",
                         x_IRC        => "irc://irc.perl.org/#moose",
                       },
-  "version"        => 0.001,
+  "version"        => 0.002,
 };
 
 my %dynamic_config;
